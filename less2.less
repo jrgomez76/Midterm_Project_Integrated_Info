@@ -1,0 +1,141 @@
+/* Section 6 Variables - LESS */
+
+@import "elements.less";
+@bkgnd-main: #77aaff;
+@bkgnd-main2: #fff;
+@bkgnd-sec: #99CCFF;
+@bkgnd-ter: #bbeeff;
+@color-main: #fff;
+@color-sec: #3366ff;
+@color-ter: #ff00a9;
+@font-main: 'Raleway', sans-serif;
+@font-sec: 'Gloria Hallelujah', cursive;
+
+/* Section 7 Variables - Color Scheme */
+@c: rgb(58, 155, 255);
+@c-dark-1: darken(@c, 10%);
+@c-dark-2: darken(@c, 20%);
+@c-light-1: lighten(@c, 10%);
+@c-light-2: lighten(@c, 20%);
+@c-split-1: spin(@c, 150);
+@c-split-1-l: lighten(@c-split-1, 10%);
+@c-split-1-d: darken(@c-split-1, 10%);
+@c-split-2: spin(@c, 200);
+@c-split-2-l: lighten(@c-split-2, 10%);
+@c-split-2-d: darken(@c-split-2, 10%);
+
+
+
+
+
+#section-6{
+  	width:100%;
+  	height:300px;
+  	background-color:@bkgnd-main;
+  	text-align:center;
+  	position:relative;
+  }
+
+#section-6 h3{
+  	margin:0 auto;
+  	color:@color-main;
+  	font-family:'helvetica', sans serif;
+  	font-weight:400;
+}
+
+.square{
+  	display:inline-block;
+  	width:250px;
+  	height:250px;
+  	margin:10px 5px 5px 5px;
+}
+
+#sq-1{
+  	background-color:@bkgnd-sec;
+  	color:@color-sec;
+  	font-family:@font-main;
+ }
+
+#sq-2{
+  	#sq-1
+ }
+
+/*#sq-3{
+  	background-color:@bkgnd-ter;
+  	color:@color-ter;
+  	font-family:@font-sec;
+  	font-size:100%;
+}*/
+
+#sq-3{
+  color:@color-ter;
+  font-family:@font-sec;
+  .gradient(#6CB1EE, #4F85B2, #BCE6FF);
+  .bordered(#DDD, #BBB, #555, #BBB);
+  .drop-shadow(2px, 5px, 10px, 0.5);
+  .rotation(5deg);
+  .rounded(10px);  
+}
+
+#section-7{
+  	width:100%;
+  	height:400px;
+  	background-color:@bkgnd-main2;
+  	text-align:center;
+  	position:relative;
+  
+}
+
+#section-7 h3{
+	margin:0 auto;
+  	color:@color-sec;
+  	font-family:'helvetica', sans serif;
+  	font-weight:400;
+	height:37px;
+}
+
+.lines{
+	display:inline-block;
+	font-family:@font-main;
+	width:100%;
+	height:33px;
+	font-size:100%;
+	color:@color-main;
+	bottom:0;
+	
+	
+}
+
+#line-1{
+	background-color:@c;
+	}
+#line-2{
+	background-color:@c-dark-1;
+	}
+#line-3{
+	background-color:@c-dark-2;
+	}
+#line-4{
+	background-color:@c-light-1;
+	}
+#line-5{
+	background-color:@c-light-2;
+	}
+#line-6{
+	background-color:@c-split-1;
+	}
+#line-7{
+	background-color:@c-split-1-l;
+	}
+#line-8{
+	background-color:@c-split-1-d;
+}
+#line-9{
+	background-color:@c-split-2;
+	}
+#line-10{
+	background-color:@c-split-2-l;
+	}
+#line-11{
+	background-color:@c-split-2-d;
+	}
